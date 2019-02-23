@@ -50,7 +50,8 @@ public class SortingAlgorithmTest {
         classUnderTest.sort (toSort, true);
         Assert.assertArrayEquals (expected, toSort, 0.001);
 
-        }
+
+
 
     }
 
