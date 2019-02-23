@@ -34,13 +34,6 @@ public class SortingAlgorithmTest {
 
     }
 
-    private SortingAlgorithms classUnderTest;
-
-    @Before
-    public void setUp() throws Exception {
-        classUnderTest = new SortingAlgorithms();
-    }
-
     @Test
     public void testSortowaniaJJ1() {
 
