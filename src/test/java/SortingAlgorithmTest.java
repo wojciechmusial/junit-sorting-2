@@ -22,4 +22,16 @@ public class SortingAlgorithmTest {
 
     }
 
+    @Test
+    public void testSortowaniaKL1 (){
+        double[] toSort =   {5,1,3,2};
+        double[] expected = {1,2,3,5};
+
+
+        classUnderTest.sort(toSort, true);
+
+        Assert.assertArrayEquals(expected,toSort, 0.001);
+
+    }
+
 }
