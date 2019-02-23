@@ -76,8 +76,6 @@ public class SortingAlgorithmTest {
 
         }
 
-
-
     }
     @Test (timeout = 150)
     public void testSortowaniaTK3 () {
@@ -93,6 +91,8 @@ public class SortingAlgorithmTest {
 
         classUnderTest.sort(toSort, true);
 
+        for (int i = 1; i < toSort.length - 1; i++) {
+            Assert.assertTrue(toSort[i] <= toSort[i + 1]);
     }
 
 }
