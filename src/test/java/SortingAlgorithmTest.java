@@ -76,8 +76,23 @@ public class SortingAlgorithmTest {
 
         }
 
+
+
     }
+    @Test (timeout = 150)
+    public void testSortowaniaTK3 () {
 
 
+        Random generator = new Random();
+
+
+        double[] toSort = new double[10000];
+        for (int j = 1; j < toSort.length; j++) {
+            toSort[j] = generator.nextDouble();
+        }
+
+        classUnderTest.sort(toSort, true);
+
+    }
 
 }
