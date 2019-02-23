@@ -20,7 +20,7 @@ public class SortingAlgorithmTest {
 
         classUnderTest.sort(toSort, true);
 
-        Assert.assertArrayEquals(expected, toSort, 0.001);
+        Assert.assertArrayEquals(expected, toSort, 0.0001);
 
     }
 
@@ -32,30 +32,9 @@ public class SortingAlgorithmTest {
 
         classUnderTest.sort(toSort, true);
 
-        Assert.assertArrayEquals(expected, toSort, 0.001);
+        Assert.assertArrayEquals(expected, toSort, 0.0001);
 
     }
-
-    @Test
-    public void testSortowaniaJJ1() {
-
-        double[] toSort = {5, 1, 3, 2};
-        double[] expected = {1, 2, 3, 5};
-
-        classUnderTest.sort(toSort, true);
-        Assert.assertArrayEquals(expected, toSort, 0.001);
-    }
-
-    @Test
-    public void testSortowaniaJJ2() {
-
-        double[] toSort = {5, 1, 3, 2};
-        double[] expected = {5, 3, 2, 1};
-
-        classUnderTest.sort(toSort, false);
-        Assert.assertArrayEquals(expected, toSort, 0.001);
-    }
-
 
     @Test(timeout = 150)
     public void testSortowaniaTK3() {
@@ -76,4 +55,25 @@ public class SortingAlgorithmTest {
         }
 
     }
+
+    @Test
+    public void testSortowaniaJJ1() {
+
+        double[] toSort = {5, 1, 3, 2};
+        double[] expected = {1, 2, 3, 5};
+
+        classUnderTest.sort(toSort, true);
+        Assert.assertArrayEquals(expected, toSort, 0.0001);
+    }
+
+    @Test
+    public void testSortowaniaJJ2() {
+
+        double[] toSort = {5, 1, 3, 2};
+        double[] expected = {5, 3, 2, 1};
+
+        classUnderTest.sort(toSort, false);
+        Assert.assertArrayEquals(expected, toSort, 0.0001);
+    }
+
 }
