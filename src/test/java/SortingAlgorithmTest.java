@@ -65,14 +65,16 @@ public class SortingAlgorithmTest {
 
 
         double[] toSort =   new double[100];
-        for (int j= toSort.length;  j>0 ; j--) {
+        for (int j=1 ;  j< toSort.length ; j++) {
             toSort[j] = generator.nextDouble() ;
-           // System.out.print(toSort[j] + ' ');
-            // classUnderTest.sort(toSort, true);
-
-        }
+                 }
 
         classUnderTest.sort(toSort, true);
+
+        if (toSort[50] < toSort[55]) {
+            boolean wynik = true;
+
+        }
 
     }
 
